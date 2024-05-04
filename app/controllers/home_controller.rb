@@ -5,5 +5,4 @@ class HomeController < ApplicationController
   def iseng
     render plain: 'Iseng - iseng aja nih'
   end
-
 end

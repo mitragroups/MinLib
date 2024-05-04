@@ -3,6 +3,6 @@ class DemoController < ApplicationController
   end
 
   def coba
-    render home/iseng
+    redirect_to controller: 'home', action: 'iseng'
   end
 end
