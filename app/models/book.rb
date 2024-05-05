@@ -7,7 +7,7 @@ class Book < ApplicationRecord
     where('price > 300000')
   end
 
-  def equal_more(price)
+  def self.equal_more(price)
     where('price >= ?', price)
   end
 end
