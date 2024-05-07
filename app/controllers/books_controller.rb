@@ -1,5 +1,10 @@
 class BooksController < ApplicationController
   def index
+    @books = Book.all
+    render json: {
+      value: @books,
+      messages: 'Success'
+    }, status: 200
   end
 
   def new
