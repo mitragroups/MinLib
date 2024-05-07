@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'books/index'
   get 'demo/index'
   get 'demo/coba'
 
