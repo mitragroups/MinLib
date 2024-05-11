@@ -1,13 +1,21 @@
 class BooksController < ApplicationController
   def index
     @books = Book.all
-    render json: {
-      value: @books,
-      messages: 'Success'
-    }, status: 200
+    #kalau mau buat API dibawah ini
+    #render json: {
+    #  value: @books,
+    #  messages: 'Success'
+    #}, status: 200
+  end
+
+  def show
+    id = params[:id]
+    @book = Book.find(id)
+    #render plain: @book.title
   end
 
   def new
+
   end
 
   def create
@@ -20,8 +28,5 @@ class BooksController < ApplicationController
   end
 
   def destroy
-  end
-
-  def show
   end
 end
