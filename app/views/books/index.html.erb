@@ -4,13 +4,15 @@
         <td>Price</td>
         <td>Page</td>
         <td>Description</td>
+        <td>Action</td>
     <tr>
-    <% @books.each do |book| %>
+    <% @books.each do |buku| %>
         <tr>
-            <td><%= book.title %></td>
-            <td><%= book.price %></td>
-            <td><%= book.page %></td>
-            <td><%= book.description %></td>
+            <td><%= buku.title %></td>
+            <td><%= buku.price %></td>
+            <td><%= buku.page %></td>
+            <td><%= buku.description %></td>
+            <td><%= link_to  "Detail", book_path(buku) %></td>
         <tr>
     <% end %>
 </table>
