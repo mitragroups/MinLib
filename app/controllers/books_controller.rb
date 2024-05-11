@@ -9,7 +9,9 @@ class BooksController < ApplicationController
   end
 
   def show
-
+    id = params[:id]
+    @book = Book.find(id)
+    #render plain: @book.title
   end
 
   def new

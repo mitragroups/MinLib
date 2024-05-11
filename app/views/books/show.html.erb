@@ -1,0 +1,16 @@
+<table>
+    <tr>
+        <td>Title</td>
+        <td>Price</td>
+        <td>Page</td>
+        <td>Description</td>
+    <tr>
+    <% @books.each do |book| %>
+        <tr>
+            <td><%= book.title %></td>
+            <td><%= book.price %></td>
+            <td><%= book.page %></td>
+            <td><%= book.description %></td>
+        <tr>
+    <% end %>
+</table>
