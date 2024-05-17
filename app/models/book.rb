@@ -12,8 +12,4 @@ class Book < ApplicationRecord
   def self.equal_more(price)
     where('price >= ?', price)
   end
-
-  def self.thin
-    where('page < 100')
-  end
 end
