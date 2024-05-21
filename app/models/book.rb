@@ -2,7 +2,7 @@ class Book < ApplicationRecord
   belongs_to :author
 
   def self.cheaper
-    order(price: :asc).pluck(:price)
+    order(price: :asc).pluck(:price, :title)
   end
 
   def self.expensive_book
