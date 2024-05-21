@@ -16,4 +16,9 @@ class Book < ApplicationRecord
   def self.thin
     where('page < 100')
   end
+
+  def self.thin_cheaper
+    thin.cheaper
+  end
+
 end
