@@ -24,4 +24,8 @@ class Book < ApplicationRecord
   def self.thin_cheaper
     thin.cheaper
   end
+
+  def self.thin_expensive
+    thin.expensive_book
+  end
 end
