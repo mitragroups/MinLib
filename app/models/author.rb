@@ -16,4 +16,8 @@ class Author < ApplicationRecord
   def self.male_author_oldest
     male_author.oldest
   end
+
+  def self.male_youngest
+    male_author.youngest
+  end
 end

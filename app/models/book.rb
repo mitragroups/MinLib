@@ -18,14 +18,14 @@ class Book < ApplicationRecord
   end
 
   def self.thick
-    where('page > 500')
+    where('page >= 500')
   end
 
   def self.thin_cheaper
     thin.cheaper
   end
 
-  def self.thin_expensive
-    thin.expensive_book
+  def self.thick_expensive
+    thick.expensive_book
   end
 end
